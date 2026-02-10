@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Yay ❤️</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="hearts"></div>
 
-<div class="card">
-  <h1>Yayyy ❤️</h1>
-  <p>Deepika Sharma, you just made Manraj very happy 🥰</p>
-  <p>Happy Valentine’s Day 💕</p>
-</div>
+  <main class="wrap">
+    <section class="card pop-in">
+      <div class="badge">💘</div>
+      <h1>Yayyy ❤️</h1>
+      <p class="subtitle">Deepika Sharma, you just made Manraj very happy 🥰</p>
+      <p class="subtitle">Happy Valentine’s Day 💕</p>
 
+      <div class="footer">
+        <span class="tiny">— Manraj</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    // Extra hearts on YES page
+    startHearts(28);
+  </script>
 </body>
 </html>
