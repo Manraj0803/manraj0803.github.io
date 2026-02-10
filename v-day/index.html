@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Hey Deepika ❤️</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="hearts"></div>
 
-<div class="card">
-  <h1>Hey Deepika ❤️</h1>
-  <p>Will you be my Valentine?</p>
+  <main class="wrap">
+    <section class="card pop-in">
+      <div class="badge">❤️</div>
+      <h1>Hey Deepika Sharma</h1>
+      <p class="subtitle">Will you be my Valentine?</p>
 
-  <div class="buttons">
-    <button id="yes" onclick="goYes()">YES 💖</button>
-    <button id="no" onmouseover="moveNo()">NO 🙈</button>
-  </div>
-</div>
+      <div class="buttons">
+        <button id="yes" class="btn btn-yes" onclick="goYes()">YES 💖</button>
+        <button id="no" class="btn btn-no" onmouseenter="moveNo()" ontouchstart="moveNo()">NO 🙈</button>
+      </div>
 
-<script src="script.js"></script>
+      <p class="hint">Tip: try pressing “NO” 😏</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
